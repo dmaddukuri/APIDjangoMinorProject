@@ -1,0 +1,59 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Login Page</title>
+        <link rel="stylesheet" href='{% static "Loginpage.css" %}'/>
+    </head>
+    <body>
+        
+    <div class="topnav">
+            <div class ="left";><img src='{% static "consultaddlogo1.jpg" %}' alt="logo" style="float: left" alt="Image" height="30" width="150">
+            <a class="active" href="home.html">Home&nbsp;&nbsp;</a>
+            <a href="contact.html">Contact us&nbsp;&nbsp;</a>
+            <a href="service.html">Service</a>
+            </div>
+    </div>
+         
+    <div class="split left">
+            <div class="centered">
+                <img class="one" src='{% static "online-shopping1.jpg" %}'  height:400px; width:500px;>
+            </div>
+    </div>
+      
+    <div class="split right">                   
+        <div class="centered">  <!-- height:400px; width:500px; position: fixed; top: 100px; bottom: 100px;-->
+            <div id="login-box">    
+            <img src='{% static "consultaddlogo1.jpg" %}' alt="logo" style="float: relative" alt="Image" height="50" width="100">
+            <h2>Login Page</h2>
+                                
+            <input type="email" name="email" placeholder="enter e-mail id"><br>
+            <input type="password" name="password" placeholder="enter password"><br>
+            <input type="text" name="promocode" placeholder="enter promocode"><br>                          
+                        
+            <div class="right">
+                <div  class="login">
+                    <input type="submit" name="Login_submit" value="Login" onclick="window.location.href = 'login.html';">      
+                </div>
+            </div>   
+            <br>    <br>
+            <div class="right">
+              <div class="loginwith">
+                <button 
+                    onclick="window.location.href='https://www.facebook.com/';"
+                    class="Facebook"><img src='{% static "fb_btn_icon.jpg" %}' height="15" width="15" style="float: left"  />&nbsp; Facebook
+                </button>
+                <button 
+                    onclick="window.location.href='https://www.google.com/';"
+                    class="Google"><img src='{% static "google_btn_icon.jpg" %}' height="15" width="15" style="float: left" />&nbsp; Google
+                </button>
+                <button
+                    onclick="window.location.href='https://twitter.com/explore';"
+                    class="Twitter"><img src='{% static "twitter_btn_icon2.jpg" %}' height="15" width="15" style="float: left" />&nbsp; Twitter
+                </button>
+            </div>                                                                        
+            </div>
+        </div>
+    </div>
+  </body>
+</html>

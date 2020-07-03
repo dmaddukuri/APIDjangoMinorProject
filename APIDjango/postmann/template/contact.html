@@ -1,0 +1,25 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Contact Us</title>
+    <link rel="stylesheet" href='{% static "Loginpage.css" %}'/>     
+</head>
+<body>
+    
+      <div class="topnav">
+        <div class ="left";><img src='{% static "consultaddlogo1.jpg" %}' alt="logo" style="float: left" alt="Image" height="30" width="150">
+            <a class="active" href="{% url 'homePage' %}">Home&nbsp;&nbsp;</a>
+            <a href="{% url 'contact' %}">Contact us&nbsp;&nbsp;</a>
+            <a href="{% url 'service' %}">Service</a>
+        </div>
+    </div>
+
+    <p>
+        <br>
+           Burlington, Kentucky<br>
+           United States - 41005<br>
+           5134108241
+    </p>
+</body>
+</html>
