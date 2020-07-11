@@ -27,8 +27,8 @@ SECRET_KEY = 'g1_^16x^u^)4@s=db*8lqyos(=d+s78am0=g05!+q+psj&m-l='
 DEBUG = True
 
 ALLOWED_HOSTS = ['*']
-
-
+CORS_ORIGIN_ALLOW_ALL = True
+CORS_ALLOW_CREDENTIALS = True
 # Application definition
 
 INSTALLED_APPS = [
@@ -40,6 +40,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'apii',
     'rest_framework',
+    'corsheaders',
 ]
 
 MIDDLEWARE = [
@@ -50,6 +51,8 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+    'corsheaders.middleware.CorsMiddleware', 
+      'corsheaders.middleware.CorsPostCsrfMiddleware',   
 ]
 
 ROOT_URLCONF = 'postmann.urls'
