@@ -26,7 +26,7 @@ SECRET_KEY = 'g1_^16x^u^)4@s=db*8lqyos(=d+s78am0=g05!+q+psj&m-l='
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['*']
+ALLOWED_HOSTS = ["*"]
 CORS_ORIGIN_ALLOW_ALL = True
 CORS_ALLOW_CREDENTIALS = True
 # Application definition
@@ -83,10 +83,10 @@ WSGI_APPLICATION = 'postmann.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': 'postgres',
-        'USER': 'postgres',
-        'PASSWORD': 'Deepu@123',
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': 'majorproject',
+        'USER': 'consultadd',
+        'PASSWORD': 'consultadd',
         'HOST': '127.0.0.1',
         'PORT': '5432',
     }
