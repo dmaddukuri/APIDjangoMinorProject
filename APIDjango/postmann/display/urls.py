@@ -11,5 +11,6 @@ urlpatterns = [
     path('c/', views.contact, name="contact"),
     path('s/', views.service, name="service"),
     path('lh/', views.loginHtml, name="loginHtml"),
-
+    path('RList/', views.getRList, name="RListb"),
+        
 ]

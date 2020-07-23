@@ -2,3 +2,16 @@
     font-weight: bold;
     font-size: 50px;
 }
+table {
+    width: 80px;
+    table-layout: auto;
+  }
+  table tr th {
+    text-align: left;
+    background: gray;
+    color: white;
+  }
+
+ #tabL {
+    column-width: 680px;
+ } 

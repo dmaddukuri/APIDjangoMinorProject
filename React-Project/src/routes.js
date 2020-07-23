@@ -6,6 +6,7 @@ import Welcome from './components/welcome';
 import Login from './components/login';
 import Signup from './components/signup';
 import Success from './components/success';
+import List from './components/Rlist';
 
 
 
@@ -18,6 +19,7 @@ const Routes = () => (
           <Route path="/login" component={Login}/>
           <Route path="/Signup" component={Signup}/>
           <Route path="/Success" component={Success}/>
+          <Route path="/List" component={List}/>
 
           
           

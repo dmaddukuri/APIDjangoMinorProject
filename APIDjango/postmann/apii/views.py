@@ -5,6 +5,33 @@ from rest_framework.views import APIView
 from .models import UserAPI
 from .serializers import UserApiSerializers
 from django.shortcuts import get_object_or_404
+from .models import RestaurantList
+from .serializers import RestaurantListSerializers
+
+class UserRestaurantList(APIView):
+    def get(self, request):
+        #print(request.data.get('email'))
+        #print(request)
+        print(request.data)
+        data = RestaurantList.objects.all()
+        serializer = RestaurantListSerializers(data, context={'request': request}, many=True)
+        stri = str(serializer.data)
+        return Response(serializer.data)
+       # stri = str(Rdata)
+       # query = RestaurantList.objects.filter(Rname=request.data.get('Rname'))#.values().first()
+       # if query:
+       #     if query.values('Rname').first()['Rname']==request.data.get('Rname'):
+       #         return Response(stri)
+       #     else:
+       #         return Response("Rname is incorrect")
+       #          #print(query)
+       #     return Response("Your have list")
+       #     #return Response(UserAPI.objects.all())
+       #else:
+       #    return Response("you dont have list"+stri)
+
+    
+
 
 class UserApiView(APIView):
 

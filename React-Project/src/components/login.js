@@ -6,6 +6,7 @@ import { BrowserRouter } from 'react-router-dom';
 import { API_URL } from "../constants";
 import './signup.css';
 import success from './success';
+import list from './Rlist';
 import {BrowserRouter as Router,Route,
     Redirect,Switch} from 'react-router-dom';
 class login extends React.Component {
@@ -26,7 +27,7 @@ class login extends React.Component {
          // this.props.resetState();
         //  this.props.toggle();
 
-        this.props.history.push('/success')
+        this.props.history.push('/list')
         });
       };
     defaultIfEmpty = value => {
